@@ -1,5 +1,5 @@
-using SeleniumFakeMailTester.SeleniumFakeMailTester.Selenium;
 using System.Diagnostics;
+using SeleniumFakeMailTester.Testing;
 
 namespace SeleniumFakeMailTester
 {
@@ -28,7 +28,7 @@ namespace SeleniumFakeMailTester
         private async void getAllEmailsFromMailbox_Click(object sender, EventArgs e)
         {
             WorkInProgress();
-            using (var mailboxManager = new MailboxManager())
+            using (var mailboxManager = new TestManager())
             {
                 await mailboxManager.StartTest(emailTB.Text);
             }

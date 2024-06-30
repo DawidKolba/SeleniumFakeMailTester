@@ -85,8 +85,6 @@
 
         #endregion
 
-        private ListView mailListLB;
-        private Button addBtn;
         private TextBox emailTB;
         private Button GetAllMailsBtn;
         private Label label1;
